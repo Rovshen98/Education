@@ -1,0 +1,16 @@
+.gallery__card{
+    width: 383px;
+    height: max-content;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    p{
+        width: 60%;
+        margin-top: 10px;
+        color: grey;
+    }
+}
