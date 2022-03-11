@@ -18,7 +18,7 @@ function FairEvents() {
                         <h3 className='text-3xl font-light text-[#656f7b] my-[30px]'>Fairs <span className='text-3xl font-light text-[#2595b3]'>& Events</span></h3>
                         <Link to="" className="mr-[20%] text-[#20343b] text-sm relative font-medium after:content-[''] after:w-20 after:h-[2px] after:bg-[#acabb0] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2 after:transition-all transition-all ease-out hover:text-[#2595b3] hover:after:transition-all hover:after:duration-500 hover:after:w-32 hover:after:bg-[#2595b3]">All Events</Link>
                     </div>
-                    <div className="block box-border">
+                    <div className="block main__ed__swiper box-border">
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={30}

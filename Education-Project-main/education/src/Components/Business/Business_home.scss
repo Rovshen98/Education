@@ -89,13 +89,16 @@
         }
         .gallery {
             width: 100%;
+            max-width: 1270px;
             height: max-content;
             padding: 15px;
             display: flex;
             justify-content: flex-start;
             gap: 40px;
             flex-wrap: wrap;
+            margin: 0 auto;
             margin-top: 20px;
+           
         }
     }
     .section__two {
@@ -208,6 +211,8 @@
         }
         &__wrapper{
             width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
             height: max-content;
             padding: 0 20px;
             display: flex;

@@ -5,7 +5,54 @@
   height: max-content;
 }
 
-.view {
+.business__detail__home .swiper-button-prev {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 100px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(138, 135, 135, 0.582);
+}
+
+.business__detail__home .swiper-button-prev::after {
+  color: black;
+  font-size: 20px;
+}
+
+.business__detail__home .swiper-button-next {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 100px;
+  right: 27px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgba(106, 108, 109, 0.582);
+}
+
+.business__detail__home .swiper-button-next::after {
+  color: black;
+  font-size: 20px;
+}
+
+.business__detail__home .view {
   width: 100%;
   height: 450px;
   display: -webkit-box;
@@ -15,14 +62,14 @@
   gap: 10px;
 }
 
-.view .left {
+.business__detail__home .view .left {
   width: 50%;
   height: 100%;
   position: relative;
   border-radius: 5px;
 }
 
-.view .left img {
+.business__detail__home .view .left img {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +80,7 @@
   border-radius: 5px;
 }
 
-.view .right {
+.business__detail__home .view .right {
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -44,14 +91,14 @@
   gap: 10px;
 }
 
-.view .right__item {
-  width: 300px;
+.business__detail__home .view .right__item {
+  width: 48%;
   height: 48%;
   position: relative;
   border-radius: 5px;
 }
 
-.view .right__item img {
+.business__detail__home .view .right__item img {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,8 +109,10 @@
   border-radius: 5px;
 }
 
-.section__detail__one {
+.business__detail__home .section__detail__one {
   width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -72,16 +121,16 @@
   position: relative;
 }
 
-.section__detail__one > h1 {
+.business__detail__home .section__detail__one > h1 {
   font-size: 23px;
   font-weight: bold;
 }
 
-.section__detail__one > p {
+.business__detail__home .section__detail__one > p {
   font-size: 17px;
 }
 
-.section__detail__one__box1 {
+.business__detail__home .section__detail__one__box1 {
   width: 75%;
   height: 300px;
   border-radius: 50px;
@@ -89,7 +138,7 @@
   margin-top: 30px;
 }
 
-.section__detail__one__box1 > h1 {
+.business__detail__home .section__detail__one__box1 > h1 {
   border-bottom: 1px solid #dadddd;
   width: 100%;
   height: 70px;
@@ -98,7 +147,7 @@
   font-size: 17px;
 }
 
-.section__detail__one__box1 .box1__wrapper {
+.business__detail__home .section__detail__one__box1 .box1__wrapper {
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -112,7 +161,7 @@
   padding: 20px;
 }
 
-.section__detail__one__box1 .box1__wrapper__item {
+.business__detail__home .section__detail__one__box1 .box1__wrapper__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,25 +169,25 @@
   gap: 15px;
 }
 
-.section__detail__one__box1 .box1__wrapper__item .left {
+.business__detail__home .section__detail__one__box1 .box1__wrapper__item .left {
   height: 100%;
 }
 
-.section__detail__one__box1 .box1__wrapper__item .left svg {
+.business__detail__home .section__detail__one__box1 .box1__wrapper__item .left svg {
   font-size: 30px;
   color: RGB(37 149 179);
 }
 
-.section__detail__one__box1 .box1__wrapper__item .right h1 {
+.business__detail__home .section__detail__one__box1 .box1__wrapper__item .right h1 {
   font-size: 20px;
   font-weight: bold;
 }
 
-.section__detail__one__box1 .box1__wrapper__item .right p {
+.business__detail__home .section__detail__one__box1 .box1__wrapper__item .right p {
   font-size: 17px;
 }
 
-.section__detail__one .fixed__box {
+.business__detail__home .section__detail__one .fixed__box {
   width: 260px;
   height: 500px;
   border-radius: 50px;
@@ -148,7 +197,7 @@
   right: 20px;
 }
 
-.section__detail__one .fixed__box__item {
+.business__detail__home .section__detail__one .fixed__box__item {
   width: 100%;
   height: 25%;
   border-bottom: 1px solid #dadddd;
@@ -165,76 +214,71 @@
           justify-content: center;
 }
 
-.section__detail__one .fixed__box__item:last-child {
-  border-bottom: none  !important;
+.business__detail__home .section__detail__one .fixed__box__item:last-child {
+  border-bottom: none !important;
 }
 
-.section__detail__one .fixed__box__item .title {
+.business__detail__home .section__detail__one .fixed__box__item .title {
   font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
-.section__detail__one .fixed__box__item .active {
+.business__detail__home .section__detail__one .fixed__box__item .active {
   font-size: 22px;
   font-weight: bold;
   color: RGB(37 149 179);
 }
 
-.section__detail__two {
+.business__detail__home .section__detail__two {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin: 80px 0;
-  padding: 0 20px;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-left: 20px;
   margin-top: 100px;
 }
 
-.section__detail__two__title {
-  width: 100%;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  font-size: 25px;
-  font-weight: 700;
-  color: RGB(37 149 179);
-}
-
-.section__detail__two__title::after {
-  content: "";
-  bottom: 0;
-  left: 20px;
-  position: absolute;
-  width: 95%;
-  height: 1px;
-  background-color: rgba(204, 206, 206, 0.452);
-}
-
-.section__detail__two__title::before {
-  content: "";
-  bottom: 0;
-  left: 20px;
-  position: absolute;
-  width: 150px;
-  height: 2px;
-  background-color: RGB(37 149 179);
-}
-
-.section__detail__two video {
+.business__detail__home .section__detail__two .section__two__main {
   width: 75%;
-  height: 500px;
-  margin-top: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 290px;
+  border-radius: 50px;
+  border: 1px solid #dadddd;
+  margin-top: 30px;
 }
 
-.section__detail__three {
+.business__detail__home .section__detail__two .section__two__main table {
+  padding: 15px;
+}
+
+.business__detail__home .section__detail__two .section__two__main tr {
+  height: 50px;
+  border-bottom: 1px solid #dadddd;
+}
+
+.business__detail__home .section__detail__two .section__two__main tr:last-child {
+  border-bottom: none !important;
+}
+
+.business__detail__home .section__detail__two .section__two__main td {
+  width: 200px;
+  text-align: center;
+}
+
+.business__detail__home .section__detail__two .section__two__main > h1 {
+  border-bottom: 1px solid #dadddd;
+  width: 100%;
+  height: 70px;
+  padding: 20px 40px;
+  color: grey;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.business__detail__home .section__detail__two .section__two__main__wrapper {
+  width: 100%;
+}
+
+.business__detail__home .section__detail__three {
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -244,8 +288,10 @@
   margin-top: 100px;
 }
 
-.section__detail__three__title {
+.business__detail__home .section__detail__three__title {
   width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,7 +306,7 @@
   color: RGB(37 149 179);
 }
 
-.section__detail__three__title::after {
+.business__detail__home .section__detail__three__title::after {
   content: "";
   bottom: 0;
   left: 20px;
@@ -270,7 +316,7 @@
   background-color: rgba(204, 206, 206, 0.452);
 }
 
-.section__detail__three__title::before {
+.business__detail__home .section__detail__three__title::before {
   content: "";
   bottom: 0;
   left: 20px;
@@ -280,7 +326,13 @@
   background-color: RGB(37 149 179);
 }
 
-.section__detail__three__wrapper {
+.business__detail__home .section__detail__three .wrapper__all {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.business__detail__home .section__detail__three__wrapper {
   width: 75%;
   height: 150px;
   border-radius: 50px;
@@ -296,7 +348,7 @@
   margin-top: 30px;
 }
 
-.section__detail__three__wrapper__item {
+.business__detail__home .section__detail__three__wrapper__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,13 +362,87 @@
   gap: 10px;
 }
 
-.section__detail__three__wrapper__item svg {
+.business__detail__home .section__detail__three__wrapper__item svg {
   color: RGB(37 149 179);
   font-size: 40px;
 }
 
-.section__detail__four {
+.business__detail__home .section__tick {
   width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.business__detail__home .section__tick > h1 {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  color: RGB(37 149 179);
+}
+
+.business__detail__home .section__tick > h1::after {
+  content: "";
+  bottom: 0;
+  left: 20px;
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background-color: rgba(204, 206, 206, 0.452);
+}
+
+.business__detail__home .section__tick > h1::before {
+  content: "";
+  bottom: 0;
+  left: 20px;
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: RGB(37 149 179);
+}
+
+.business__detail__home .section__tick .wrapper__main {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  gap: 50px;
+}
+
+.business__detail__home .section__tick .wrapper__main h1 {
+  font-weight: bold;
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.business__detail__home .section__tick .wrapper__main li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 19px;
+}
+
+.business__detail__home .section__tick .wrapper__main li svg {
+  font-size: 25px;
+  color: RGB(37 149 179);
+}
+
+.business__detail__home .section__detail__four {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -329,31 +455,31 @@
   gap: 2vw;
 }
 
-.section__detail__four__item {
+.business__detail__home .section__detail__four__item {
   width: 32%;
   height: 460px;
   border: 1px solid rgba(207, 207, 207, 0.411);
 }
 
-.section__detail__four__item img {
+.business__detail__home .section__detail__four__item img {
   width: 100%;
 }
 
-.section__detail__four__item h1 {
+.business__detail__home .section__detail__four__item h1 {
   font-size: 25px;
   font-weight: 600;
   padding-left: 15px;
   margin-top: 10px;
 }
 
-.section__detail__four__item p {
+.business__detail__home .section__detail__four__item p {
   font-size: 18px;
   font-weight: bold;
   color: grey;
   padding-left: 15px;
 }
 
-.section__detail__four__item__price {
+.business__detail__home .section__detail__four__item__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,24 +492,24 @@
   border-bottom: 1px solid rgba(207, 207, 207, 0.411);
 }
 
-.section__detail__four__item__price .wrapper {
+.business__detail__home .section__detail__four__item__price .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section__detail__four__item__price svg {
+.business__detail__home .section__detail__four__item__price svg {
   font-size: 30px;
   color: RGB(37 149 179);
 }
 
-.section__detail__four__item__price .percentage {
+.business__detail__home .section__detail__four__item__price .percentage {
   font-size: 18px;
   font-weight: bold;
   color: grey;
 }
 
-.section__detail__four__item h2 {
+.business__detail__home .section__detail__four__item h2 {
   font-size: 20px;
   font-weight: 600;
   padding: 10px 15px;

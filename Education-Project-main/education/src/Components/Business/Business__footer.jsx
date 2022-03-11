@@ -1,14 +1,66 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./Business__footer.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 function Business__footer() {
+    const [logos, setlogos] = useState([
+        {
+            id:200,
+            img:"residence.png"
+        },
+        {
+            id:201,
+            img:"residence.png"
+        },
+        {
+            id:202,
+            img:"residence.png"
+        },
+        {
+            id:203,
+            img:"residence.png"
+        },
+        {
+            id:204,
+            img:"residence.png"
+        },
+        {
+            id:205,
+            img:"residence.png"
+        }
+    ])
+
   return (
     <div className='footer'>
         <div className="logos">
-                <div className="logos__item"><img src={"/images/residence.png"} alt="" /></div>
-                <div className="logos__item"><img src={"/images/residence.png"} alt="" /></div>
-                <div className="logos__item"><img src={"/images/residence.png"} alt="" /></div>
-                <div className="logos__item"><img src={"/images/residence.png"} alt="" /></div>
-                <div className="logos__item"><img src={"/images/residence.png"} alt="" /></div>
+        <Swiper
+        slidesPerView={6}
+        spaceBetween={10}
+        navigation
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Navigation]}
+        className="mySwiper"
+      >
+            {logos.map((item)=>{
+              return  <SwiperSlide key={item.id}><div  className="logos__item"><img src={`/images/${item.img}`} alt="" /></div></SwiperSlide>  
+            })}
+                
+    </Swiper>      
         </div>
         <div className="footer__wrapper">
             <div className="footer__wrapper__item">

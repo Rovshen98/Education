@@ -7,7 +7,7 @@ import Article from '../Components/Education/Article';
 import FairEvents from '../Components/Education/FairEvents';
 import EFooter from "../Components/Education/EFooter";
 import Footer from '../Components/Basic/Footer';
-
+import Slidercity from '../Components/Education/Slidercity';
 class Education extends Component {
   constructor(props) {
     super(props);
@@ -37,6 +37,7 @@ class Education extends Component {
           <Banner />
           <Actions />
           <Article />
+          <Slidercity />
           <FairEvents />
         </main>
         {isVisible && <Modal closeModal={() => this.closeModal} />}
